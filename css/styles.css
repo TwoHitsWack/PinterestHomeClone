@@ -1,4 +1,4 @@
-/* --------VARIABLES-> */
+/* #region --------VARIABLES-> */
 :root{
     --rojo100: #e60023;
     --rojoHover: #ad081b;
@@ -8,8 +8,9 @@
     --gris400: #111;
     --border: #7fc1ff;
 }
+/* #endregion --------VARIABLES-> */
 
-/* --------GENERALES-> */
+/* #region --------GENERALES-> */
 *{
     margin: 0;
     padding: 0;
@@ -20,3 +21,144 @@
 a{
     text-decoration: none;
 }
+
+/* #region --------UTILIDADES-> */
+.btn{
+    min-width: 73px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris400);
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* #endregion --------UTILIDADES-> */
+
+/* #endregion --------GENERALES-> */
+
+/* #region --------MENU PRINCIPAL-> */
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+
+nav .img-logo{
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .img-logo img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+nav .img-logo img:hover{
+    box-shadow:
+    0 0 0 12px rgba(0, 0, 0, 0.07);
+}
+
+/* #region --------INPUT-> */
+.input-container{
+    min-width: 407px;
+    height: 48px;
+    padding: 0 8px;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+nav input{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 38px;
+    background-color: var(--gris200);
+    border: 3px solid transparent;
+    border-radius: 40px;
+    outline: none;
+    transition: all .5s;
+}
+
+nav input::placeholder{
+    font-size: 16px;
+}
+
+nav input:focus{
+    padding: 0 0 0 16px;
+    border: 3px solid var(--border);
+}
+
+nav .input-container i{
+    width: 48px;
+    height: 100%;
+    padding: 0 0 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--gris300);
+}
+
+nav input:focus ~ i{
+    width: 0;
+    opacity: 0;
+}
+/* #endregion --------INPUT-> */
+
+/* #region --------ICONOS-> */
+.iconos{
+    width: 168px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--gris300);
+    font-size: 24px;
+}
+
+nav .iconos i,
+nav .iconos div{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .iconos i:hover,
+nav .iconos div:hover{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+nav .iconos i:last-child{
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+}
+
+nav .iconos img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* #endregion --------ICONOS-> */
+
+/* #endregion --------MENU PRINCIPAL-> */
