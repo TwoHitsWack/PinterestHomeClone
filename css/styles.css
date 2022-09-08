@@ -203,7 +203,90 @@ nav .iconos img{
     border-radius: 16px;
 }
 
+/* #region --------HOVER-> */
 .container-img div{
-    display: none;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    transition: all .2s;
 }
+
+.container-img:hover div{
+    opacity: 1;
+}
+
+.container-img .top-row{
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-img .top-row a:not(.btn){
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 700;
+}
+
+.container-img .top-row i{
+    padding-right: 5px;
+    color: #fff;
+    align-self: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-img .top-row .btn{
+    min-width: 93px;
+    height: 45px;
+    background-color: var(--rojo100);
+}
+
+.container-img .top-row .btn:hover{
+    background-color: var(--rojoHover);
+}
+
+.container-img .bottom-row{
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+.container-img .bottom-row a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--gris100);
+    color: #111;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.container-img .bottom-row a:nth-child(1){
+    width: 62%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-img .bottom-row a:nth-child(1) i{
+    padding: 0 8px;
+    transform: rotate(45deg);
+}
+
+.container-img .bottom-row a:nth-child(2),
+.container-img .bottom-row a:nth-child(3){
+    width: 32px;
+    justify-content: center;
+}
+/* #endregion --------HOVER-> */
+
 /* #endregion --------GALERIA-> */
