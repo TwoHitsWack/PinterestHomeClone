@@ -339,3 +339,32 @@ nav .iconos img{
 /* #endregion --------REACTIONS-> */
 
 /* #endregion --------GALERIA-> */
+
+/* #region --------BOTONES INFERIORES-> */
+.btn-inferiores{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+}
+
+.btn-inferiores a{
+    width: 56px;
+    height: 56px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: var(--gris400);
+    border-radius: 50%;
+    box-shadow:
+    2px 2px 10px 1px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.btn-inferiores a:hover{
+    background-color: var(--gris100);
+}
+/* #endregion --------BOTONES INFERIORES-> */
