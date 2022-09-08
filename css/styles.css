@@ -289,4 +289,53 @@ nav .iconos img{
 }
 /* #endregion --------HOVER-> */
 
+/* #region --------REACTIONS-> */
+.info-img{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-img .info{
+    display: flex;
+    align-items: center;
+}
+
+.info-img .info img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info-img .info a{
+    padding: 0 5px;
+    color: var(--gris400);
+    font-size: 14px;
+}
+
+.info-img .info a:hover{
+    text-decoration: underline;
+}
+
+.reactions{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.reactions img{
+    width: 16px;
+    height: 16px;
+    margin-right: 1px;
+}
+
+.reactions span{
+    margin-left: 5px;
+    color: var(--gris400);
+    font-size: 14px;
+}
+/* #endregion --------REACTIONS-> */
+
 /* #endregion --------GALERIA-> */
